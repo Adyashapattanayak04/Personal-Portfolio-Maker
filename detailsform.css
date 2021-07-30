@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:sans-serif
+}
+
+
+
+body{
+    
+    height: 150vh;
+    justify-content: center;
+    align-items: center;
+   
+
+    
+}
+
+
+
+
+
+button{
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+
+
+}
+button a{
+    color: #fbfcfd;
+    text-decoration: none;
+}
+
+.content{
+    color:#fbfcfd;
+    position: absolute;
+    top: 50%;
+    left:18%;
+    transform: translateY(-50%);
+    z-index:2;
+
+}
+
+h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+
+
+}
+
+
+
+
+
+.container{
+    max-width: 700px;
+    width: 100%;
+     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+     padding :25px 30px;
+     border-radius: 5px;
+     margin-top: 50px;
+
+}
+ .container .title{
+     font-size:25px;
+     font-weight: 500;
+     position: relative;
+     color: antiquewhite;
+}
+.container .title::before{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #9b59b6;
+
+}
+.container form .user-details{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 12px 0 12px 0;
+
+
+}
+.container form .user-details .input-box{
+    margin-bottom: 15px;
+
+    width:calc(100%/ 2-20px);
+}
+.user-details .input-box  .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: antiquewhite;
+
+
+}
+
+
+
+
+.user-details .input-box input{
+
+    height: 24px;
+   
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left:15px;
+    font-size:12px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:hover{
+    border-color: #9b59b6;
+}
+
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color:#9b59b6;
+}
+
+form .button{
+    height: 45px;
+    width: 25px 0;
+}
+form .button input{
+    height: 70%;
+    
+    outline: none;
+    color:#fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background:linear-gradient(135deg, #e7913f, #9b59b6) ;
+
+}
+form .button input:hover{
+    background:linear-gradient(-135deg, #e7913f, #9b59b6) ;
+
+}
+form p{
+    color: bisque;
+}
+
+
+  
+
+
+
+
+
+/*media queries*/
+
+@media (max-width:768px){
+
+    
+
+    header #menu{
+        display: block;
+        z-index: 1000;
+     
+    }
+
+    header .navbar{
+        position: fixed;
+        z-index: 999;
+        top:-149%; left:0;
+        width:100%;
+        background:rgb(3, 3, 3);
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        margin-left: 118px;
+    }
+
+    header .navbar ul li{
+        margin:10px 0;
+        text-align: center;
+        width:100%;
+    }
+
+    header .navbar ul li a{
+        font-size: 20px;
+        display: block;
+    }
+
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover{
+        color:#cf831e;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+     }
+
+    header .navbar.nav-toggle{
+        top:6.4rem;
+        
+    }
+}
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    .container form .user-details {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 12px 0 12px 0;
+    }
+
+    .container form .user-details .input-box{
+        margin-bottom: 15px;
+       width:100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    
+}
