@@ -67,7 +67,7 @@ $res = mysqli_fetch_array($result);
     <div id="particles-js"></div>
 
     <div class="content">
-        <img src="images/profile.jpg" alt="">
+        <img src="profile.jpg" alt="">
         <h3><?php echo $res['fullname']; ?></h3>
         <p> i am a <span> front end developer </span> </p>
         <a href="#about" class="btn">about me</a>
@@ -86,7 +86,7 @@ $res = mysqli_fetch_array($result);
     <div class="row">
 
         <div class="image">
-            <img class="tilt" src="images/profile.jpg" alt="">
+            <img class="tilt" src="profile.jpg" alt="">
         </div>
 
         <div class="content">
@@ -233,21 +233,21 @@ $res = mysqli_fetch_array($result);
     <div class="box-container">
         
         <div class="box tilt">
-            <img src="images/blog-img-1.jpg" alt="">
+            <img src="blog-img-1.jpg" alt="">
             <h3><?php echo $res['proj1']; ?> </h3>
             
             <a href="<?php echo $res['link1']; ?>" class="btn">learn more</a>
         </div>
 
         <div class="box tilt">
-            <img src="images/blog-img-2.jpg" alt="">
+            <img src="blog-img-2.jpg" alt="">
             <h3><?php echo $res['proj2']; ?></h3>
             
             <a href="<?php echo $res['link2']; ?>" class="btn">learn more</a>
         </div>
 
         <div class="box tilt">
-            <img src="images/blog-img-3.jpg" alt="">
+            <img src="blog-img-3.jpg" alt="">
             <h3><?php echo $res['proj3']; ?></h3>
             
             <a href="<?php echo $res['link3']; ?>" class="btn">learn more</a>
@@ -268,7 +268,7 @@ $res = mysqli_fetch_array($result);
     <div class="row">
 
         <div class="image">
-            <img src="images/contact-img.svg" alt="">
+            <img src="contact-img.svg" alt="">
         </div>
 
         <form action="">
@@ -327,8 +327,8 @@ $res = mysqli_fetch_array($result);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
 <!-- particles.js links  -->
-<script src="js/particles.min.js"></script>
-<script src="js/app.js"></script>
+<script src="particles.min.js"></script>
+<script src="app.js"></script>
 
 <!-- vanilla-tilt.js link  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
